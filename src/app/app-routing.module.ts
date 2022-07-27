@@ -4,6 +4,7 @@ import {ListComponent} from "./tours/list/list.component";
 import {CreateComponent} from "./tours/create/create.component";
 import {EditComponent} from "./tours/edit/edit.component";
 import {DeleteComponent} from "./tours/delete/delete.component";
+import {DetailComponent} from "./tours/detail/detail.component";
 
 const routes: Routes = [
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path : 'delete/:id',
     component :DeleteComponent
+  },
+  {
+    path : 'detail',
+    component :DetailComponent
   },
 ];
 

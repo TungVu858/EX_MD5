@@ -10,7 +10,7 @@
     </tr>
     <tr *ngFor="let t of tours; index as i">
       <td>{{i + 1}}</td>
-      <td>{{t.title}}</td>
+      <td><a [routerLink]="['/detail', t.id]">{{t.title}}</a></td>
       <td>{{t.price}}</td>
       <td>{{t.description}}</td>
       <td><a [routerLink]="['/edit',t.id]">Sửa</a></td>

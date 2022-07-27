@@ -9,6 +9,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { EditComponent } from './tours/edit/edit.component';
 import { DeleteComponent } from './tours/delete/delete.component';
 import {HttpClientModule} from "@angular/common/http";
+import { DetailComponent } from './tours/detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {HttpClientModule} from "@angular/common/http";
     ListComponent,
     CreateComponent,
     EditComponent,
-    DeleteComponent
+    DeleteComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,

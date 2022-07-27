@@ -1,0 +1,21 @@
+<h1>Xoá </h1>
+<form [formGroup]="tForm" (ngSubmit)="delete(id)">
+  <table>
+    <tr>
+      <td>Tiểu đề</td>
+      <td><input type="text" formControlName="title"></td>
+    </tr>
+    <tr>
+      <td>Giá </td>
+      <td><input type="number" formControlName="price"></td>
+    </tr>
+    <tr>
+      <td>Mô tả </td>
+      <td><input type="text" formControlName="description"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Xoá</button></td>
+    </tr>
+  </table>
+</form>

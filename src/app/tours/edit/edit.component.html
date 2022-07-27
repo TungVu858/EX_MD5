@@ -1,0 +1,20 @@
+<h1>Sửa Tours</h1>
+<form [formGroup]="tForm" (ngSubmit)="update(id)">
+  <table>
+    <tr>
+      <td><label>Tiêu đề</label></td>
+      <td><input type="text" formControlName="title"></td>
+    </tr>
+    <tr>
+      <td><label>Giá</label></td>
+      <td><input type="number" formControlName="price"></td>
+    </tr>
+    <tr>
+      <td><label>Mô tả</label></td>
+      <td><input type="text" formControlName="description"></td>
+    </tr>
+    <tr>
+      <td><button>Sửa</button></td>
+    </tr>
+  </table>
+</form>

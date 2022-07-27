@@ -1,0 +1,22 @@
+<h1>Danh sách sản phẩm</h1>
+<a routerLink="/create">Tạo mới sản phẩm</a>
+  <table>
+    <tr>
+      <td>STT</td>
+      <td>Tiêu đề</td>
+      <td>Giá</td>
+      <td>Mô tả</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr *ngFor="let t of tours; index as i">
+      <td>{{i + 1}}</td>
+      <td>{{t.title}}</td>
+      <td>{{t.price}}</td>
+      <td>{{t.description}}</td>
+      <td><a [routerLink]="['/edit',t.id]">Sửa</a></td>
+      <td><a [routerLink]="['/delete',t.id]">Xoá</a></td>
+    </tr>
+  </table>
+
+
+

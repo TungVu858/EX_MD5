@@ -23,7 +23,7 @@ export class CreateComponent implements OnInit {
     }, e => {
       console.log(e);
     });
-    this.router.navigate(['/']);
+    this.router.navigate(['/list']);
   }
   constructor(private toursService : ToursService,private router : Router) { }
 

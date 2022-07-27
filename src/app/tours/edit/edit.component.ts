@@ -38,8 +38,8 @@ export class EditComponent implements OnInit {
   }
 
   update(id: number) {
-    const category = this.tForm.value;
-    this.toursService.update(id, category).subscribe(() => {
+    const tour = this.tForm.value;
+    this.toursService.update(id, tour).subscribe(() => {
       alert('Cập nhật thành công');
       this.router.navigate(['/list']);
     }, e => {

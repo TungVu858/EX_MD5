@@ -23,7 +23,7 @@ const routes: Routes = [
     component :DeleteComponent
   },
   {
-    path : 'detail',
+    path : 'detail/:id',
     component :DetailComponent
   },
 ];
